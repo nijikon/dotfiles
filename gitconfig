@@ -1,0 +1,25 @@
+[user]
+	name = Tomasz Pajor
+	email = tomek@polishgeeks.com
+
+[core]
+	editor = vim
+	pager = cat
+
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+	b = branch
+	l = log -5
+
+[color]
+	status = auto
+	branch = auto
+	interactive = auto
+	diff = auto
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
