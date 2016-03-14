@@ -13,6 +13,7 @@ Plugin 'tpope/vim-haml'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'kchmck/vim-coffee-script'
 
 call vundle#end()
 
@@ -23,7 +24,7 @@ augroup myfiletypes
   " Clear old autocmds in group
   autocmd!
   " autoindent with two spaces, always expand tabs
-  autocmd FileType ruby,eruby,yaml,less,python,php,html,js,css,axlsx,scss setlocal ai sw=2 sts=2 et
+  autocmd FileType ruby,eruby,yaml,less,python,php,html,js,css,axlsx,scss,coffee setlocal ai sw=2 sts=2 et
   autocmd FileType js setlocal ai sw=4 sts=4 et
 augroup END
 
@@ -63,6 +64,7 @@ let g:ackprg="ack -H --nocolor --nogroup --column --ignore-dir .bundle --ignore-
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 let g:syntastic_haml_checkers = ['haml_lint']
 let g:syntastic_js_checkers = ['jslint', 'jshint']
+let g:syntastic_coffee_checkers = ['coffeelint']
 
 " Remove trailing whitespace on save for ruby files.
 au BufWritePre * :%s/\s\+$//e
