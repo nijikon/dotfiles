@@ -9,7 +9,6 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-haml'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
@@ -63,7 +62,6 @@ let g:ctrlp_custom_ignore = {
   \ }
 let g:ackprg="ack -H --nocolor --nogroup --column --ignore-dir .bundle --ignore-dir coverage --ignore-dir log --ignore-dir tmp"
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
-let g:syntastic_haml_checkers = ['haml_lint']
 let g:syntastic_js_checkers = ['jslint', 'jshint']
 let g:syntastic_coffee_checkers = ['coffeelint']
 let g:syntastic_jade_checkers = ['jade_lint']
