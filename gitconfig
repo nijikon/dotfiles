@@ -12,6 +12,7 @@
 	st = status
 	b = branch
 	l = log -5
+	cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
 
 [color]
 	status = auto
