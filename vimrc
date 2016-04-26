@@ -33,6 +33,7 @@ set nocompatible
 set nofoldenable
 set hidden
 set shiftround
+set number
 
 set backspace=indent,eol,start
 
