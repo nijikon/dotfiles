@@ -34,3 +34,5 @@
 	prune = true
 [apply]
 	whitespace = nowarn
+[help]
+	autocorrect = 1
