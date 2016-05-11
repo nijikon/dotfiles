@@ -28,20 +28,28 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+
 [github]
 	user = nijikon
+
 [fetch]
 	prune = true
+
 [apply]
 	whitespace = nowarn
+
 [help]
 	autocorrect = 1
+
 [branch]
 	autosetupmerge = true
         autosetuprebase = always
+
 [push]
 	default = current
+
 [rerere]
 	enabled = 1
+
 [merge]
         ff = only
