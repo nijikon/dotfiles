@@ -1,5 +1,7 @@
 source ~/.profile
 
+ulimit -n 2048
+
 # added by travis gem
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 
